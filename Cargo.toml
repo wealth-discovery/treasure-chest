@@ -1,12 +1,12 @@
 [workspace]
-members = ["treasure-chest-network"]
+members = ["treasure-chest-config", "treasure-chest-network"]
 resolver = "2"
 
 [workspace.package]
 version = "1.0.0"
 authors = ["<Husky> <husky.robot.dog@gmail.com>"]
 description = "treasure-chest"
-edition = "2021"
+edition = "2024"
 license-file = "LICENSE"
 repository = "https://github.com/wealth-discovery/treasure-chest"
 readme = "README.md"
@@ -38,3 +38,4 @@ parking_lot = { version = "0.12" }
 nu-ansi-term = { version = "0.50" }
 rust_decimal = { version = "1.36", features = ["serde", "serde-with-float"] }
 rust_decimal_macros = { version = "1.36" }
+config = { version = "0.15", features = ["yaml"] }

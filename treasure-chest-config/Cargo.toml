@@ -1,5 +1,5 @@
 [package]
-name = "treasure-chest-network"
+name = "treasure-chest-config"
 version.workspace = true
 authors.workspace = true
 description.workspace = true
@@ -9,6 +9,6 @@ repository.workspace = true
 readme.workspace = true
 
 [dependencies]
-reqwest = { workspace = true }
-tokio = { workspace = true }
 anyhow = { workspace = true }
+config = { workspace = true }
+serde = { workspace = true }
