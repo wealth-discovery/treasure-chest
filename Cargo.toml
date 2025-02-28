@@ -1,5 +1,9 @@
 [workspace]
-members = ["treasure-chest-config", "treasure-chest-network"]
+members = [
+    "treasure-chest-config",
+    "treasure-chest-log",
+    "treasure-chest-network",
+]
 resolver = "2"
 
 [workspace.package]
@@ -12,6 +16,9 @@ repository = "https://github.com/wealth-discovery/treasure-chest"
 readme = "README.md"
 
 [workspace.dependencies]
+treasure-chest-config = { path = "./treasure-chest-config" }
+treasure-chest-log = { path = "./treasure-chest-log" }
+treasure-chest-network = { path = "./treasure-chest-network" }
 tokio = { version = "1.43", features = ["full"] }
 anyhow = { version = "1.0" }
 tracing = { version = "0.1" }
